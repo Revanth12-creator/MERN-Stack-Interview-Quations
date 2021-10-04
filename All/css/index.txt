@@ -1,0 +1,90 @@
+1) what is CSS============================
+a)Cascading Style Sheets is a style sheet language 
+b)used for describing the presentation of a document written in a markup language such as HTML. 
+c)CSS is used to define styles for your web pages.
+d)with help of html attributes we can control the elements of  html page  .
+e)with help of one attribute we can do many performence.like we can give font, color,width,hegiht
+f) it provides the better look fot the html page
+
+2) what are CSS selectord============================
+a)A CSS selector selects find the HTML element(s) you want to style.
+A)id selectors
+ #para1 {
+  text-align: center;
+  color: red;
+}
+B)class selectors
+ .para1 {
+  text-align: center;
+  color: red;
+}
+C) Element selectors
+ p {
+  text-align: center;
+  color: red;
+}
+D) Grouping selectors
+ h1,p,h3,h4 {
+  text-align: center;
+  color: red;
+}
+E) Universal selectors
+ h1,p,h3,h4 {
+  text-align: center;
+  color: red;
+}
+
+G) Combinator selectors
+ div p {
+  text-align: center;
+  color: red;
+}
+H)Pseudo-classes selector?
+element when a user mouses over it
+a:hover {
+  color: #FF00FF;
+}
+I)Pseudo-element selector?
+Style the first letter, or line, of an element
+p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+3)How many way add css=================================
+Three Ways to Insert CSS
+There are three ways of inserting a style sheet:
+
+External CSS-----ex: <link rel="stylesheet" href="mystyle.css">
+Internal CSS-----ex:<head><style>p{ color:"red"<style/></head>
+Inline CSS-------ex:<p style="color:red;">This is a paragraph.</p>
+
+4)Grid Layout==============================
+The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, 
+making it easier to design web pages without having to use floats and positioning.
+
+5)What is Responsive Web Design?==============================
+Responsive web design is about creating web sites which automatically adjust themselves
+to look good on all devices, from small phones to large desktops.
+
+6)Flex ==============================
+The Flexible Box Layout Module,
+makes it easier to design flexible responsive layout structure without using float or positioning.
+
+The flex property sets the flexible length on flexible items
+7) What are the defined dimension properties?==============================
+The defined dimension properties are Height, Min-height, Max-height, Width, Min-Width, and Max-Width.
+
+8)Explain Flexbox and CSS grid?==============================
+Flexbox *****
+Flexbox is a layout tool that is very useful in smaller areas of the site. 
+The main feature of this is to align items in a horizontal or vertical axis.
+It is used to space the item out automatically, with other layout options, 
+and in a defined order to display the items.
+
+grid*****
+CSS grid is almost a layout tool for the single page. 
+It is used for layouts for both the horizontal and vertical axis unlike the flexbox tool, 
+which is used only for one axis at a time.
+
+

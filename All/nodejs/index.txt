@@ -1,0 +1,85 @@
+1)what is nodeJS=============================
+a)NodeJS is a open-sourse serverside runtime enviranment for javascript.
+b)it is uses javascript on the serverside4
+c)and nodejs runs javascript outside the browser
+d)nodejs does not have window object 
+e)like alert , propt, conform etc
+f)it is asingle threded application
+
+2)Why  nodeJS=============================
+a)why means example a client sends the request to the server,than server returns the content of client
+b)node js eliminats the waiting ,it continuoes the next request  
+c)it is uses asynchronous programming
+d)it single thereded and non blcking
+
+3)what can do nodeJS=============================
+a)it can create dynamic webpages   
+b)it can add, delete, modify data in your database
+
+
+4)what are nodejs modules=============================
+it is having 3 types of modules 
+ 1)Core modules
+ 2)Local modules
+ 3)Third party modules
+1)Core modules
+a)core modules are bult in modules
+b) no need to install core modules we can directly import with help of required() method
+c) we have many built in methods .there are
+FS-(FileSystem), OS-(opetating System), Http module
+
+2)LOcal modules 
+a)local modules are which is exporting another file 
+b)to exporting file we should use ----module.export=filename;
+ than to importing that exported file use require();like--canst app=require(./App.js)
+
+3)Third party modules
+a)third party modules are which is intslles through the npm like express , bootstrap ,handlebars
+
+
+5)what is Buffer & Stream=============================
+a)Buffer is a raw data .Stream is a flow of continuation
+b)Stream are 4 types
+ 1)Readable Stream, 2)Writable Stream, 3)duplex, 4)Transform Stream
+1)Readable Stream
+a)it is working with the asynchronous calls
+b)it is reads the files from the given file
+
+2)Readable Stream
+a)it is aslo working with the asynchronous calls
+b)it is write the files to another ,
+
+3)Duplex
+a)Duplex can read and write at a time with help of pipe()
+
+4)Transeform Stream
+a)it is used to modify and transfore data
+
+6)what is FS FileSystem=============================
+a)it is a module used to reay and write file synchronously and asynchronously
+b)with help of fs module we can create folder ,files and read file, write file, and delete file and folder
+
+7)what is HTTP module=============================
+a) HTTP module is used to transfore data
+b) it can creates the server and that server listen port number
+c)res.writeHead() method is the status code, 200 means that all is OK, 
+ the second argument is an object containing the response headers.
+
+8)Events Module=============================
+a)Node.js has a built-in module, called "Events", where you can create-,
+ listen for- your own events.
+b)You can assign event handlers to your own events with the EventEmitter object.
+
+9)Node.js MongoDB=============================
+
+MongoDB Create Database     let dbName=data.db("MyDatabase")
+MongoDB Create Collection   dbName.crateCollection("Users")
+MongoDB Insert              dbName.Collection..inserOne({name:"revanth",age:20})
+MongoDB Find                dbName.Collection. .fond()
+MongoDB Query               var query={name:"Revanth"},   dbName.Collection.find(query)
+MongoDB Sort                dbName.Collection..sort(name:1)/sort(name:-1)
+MongoDB Delete              dbName.Collection..deleteOne({name:"Revanth"})
+MongoDB Drop Collection     dbName.Collection.drop()
+MongoDB Update              var query={name:"Revanth"}, var myUpdat={$set{name:"Kumar"}}
+                            dbName.Collection.updateOne(myUpdat, query)
+MongoDB Limit               dbName.Collection.limit(3)

@@ -1,0 +1,356 @@
+1)what is javascript===============
+javascript is a most popular peogramming language for web.
+it is used both for client side and server side .
+it allows to make your web page vey intaractive.
+where html and css creates the page and gives the style and javascript make validation and very inaractive.
+it a ES6 specifivation.and just in compiler
+
+2)JavaScript Display Possibilities ways ===============
+JavaScript can "display" data in different ways:
+a)Writing into an HTML element, using innerHTML.
+b)Writing into the HTML output using document.write().
+c)Writing into an alert box, using window.alert().
+d)Writing into the browser console, using console.log().
+
+3)ES5 and ES6 differences===============
+ES5******
+points
+1.ES5 is the fifth edition of the ECMAScript 
+2.It was introduced in 2009.
+3.ES5 supports primitive data types that are string, number, boolean, null, and undefined.
+4.In ES5, we could only define the variables by using the var keyword.
+5.In ES5, both function and return keywords are used to define a function.
+6.In ES5, there is a use of for loop to iterate over elements.
+
+ES6******
+points
+1.ES6 is the sixth edition of the ECMAScript
+2.It was introduced in 2015.
+3.In ES6, It introduced a new primitive data type 'symbol' for supporting unique values.
+4.In ES6, there are two new ways to define variables that are let and const.
+5.An arrow function is a new feature introduced in ES6 by which we don't require the function keyword to define the function.
+6.ES6 introduced the concept of for...of loop to perform an iteration over the values of the iterable objects.
+
+
+4)what is JSON ===============
+JSON stands for JavaScript Object Notation
+JSON is a format for storing and transporting data.
+JSON is often used when data is sent from a server to a web page.
+JSON is a lightweight data interchange format
+it is key and value pair like javascript objects
+
+5)let and const===============
+             let                                            const
+let is block scope                                const is the block scope
+let we can reasign values                         we can not resign value it is like fixed value
+let we can not access outside the loop            const we can not access outside the loop
+
+6)what is Hosting   ===============
+a variable can be used before it has been declared.exaple1
+x = 5; 
+var x;
+console.log(x)
+
+exaple2
+test();
+function test(){
+    console.log("DJJD")
+}
+
+7)what is number===========string having a number so it is take as a number====
+example1
+var x = 10;
+var y = 20;
+var z = x + y;           // z will be 30 (a number) //here doing sum
+
+example2
+var x = "10";
+var y = "20";
+var z = x + y;           // z will be 1020 (a string) //here doing concating
+
+example3
+var x = "100";
+var y = "10";
+var z = x * y;         o/p:1000  //here doing multiplication 
+
+example4
+var x = 10;
+var y = "20";
+var z = x + y;           // z will be 1020 (a string) //here also concating
+
+example5
+var x = "10";
+var y = 20;
+var z = x + y;           // z will be 1020 (a string)  //here also concating
+
+example6
+let a=10;
+let b=20;
+console.log("helo" +a+b)   o/p: helo1020
+
+8)======TWO objects=========
+var x = new Number(500);             
+var y = new Number(500); 
+ if(x==y)                //it is showing error bsc two objects cant not compare
+
+
+9)what is toString() Method===============
+The toString() method returns a number as a string.
+
+10)When to Use Arrays. When to use Objects.===============
+You should use objects when you want the element names to be strings (text).
+You should use arrays when you want the element names to be numbers.
+
+11)Array decleration===============
+var points = new Array(40, 100);               // Bad
+var points = [40, 100];                        // Good
+
+12)Converting Arrays to Strings===============
+The JavaScript method toString() converts an array to a string of (comma separated) array values.
+
+
+13)JavaScript Regular Expressions===============
+A regular expression is a sequence of characters that forms a search pattern.
+The search pattern can be used for text search and text replace operations.
+A regular expression can be a single character, or a more complicated pattern.
+Regular expressions can be used to perform all types of text search and text replace operations.
+
+14)Match method in regular expression===============
+example1==for string
+var str = "Is this all there is?";
+var patt1 = /is/g;
+var result = str.match(patt1);
+console.log(result);             //o/p:is,is   /it wiil search globally 
+
+example2==numbers
+var str = "1234256789";
+var patt1 = /[1-4]/g;
+var result = str.match(patt1);     //o/p: 12342  /it wiil search globally 
+
+15)try, catch , finally , throw===============
+try****
+The try statement lets you test a block of code for errors. without catch block try will not work
+try {
+    console.log("welcome revanth") ;
+  }
+  catch(err) {
+    console.log(err.message) ;               //o/p: welcome revanth          //this test error try block
+  }
+
+catch******
+The catch allows you to define a block of code to be executed, if an error occurs in the try block.
+
+try {
+    console.log(revanth) ;
+  }
+  catch(err) {
+    console.log(err.message) ;               //o/p:revanth not defined        //this catch block hadle error
+  }
+
+throw*****
+The throw statement lets you create custom errors.
+if(x == "") throw "the value is empty";
+
+finally*******
+The finally statement lets you execute code, after try and catch, regardless of the result.
+ var message, x;
+  message = document.getElementById("p01");
+  message.innerHTML = "";
+  x = document.getElementById("demo").value;
+  try { 
+    if(x == "")  throw "is empty";
+    if(isNaN(x)) throw "is not a number";
+    x = Number(x);
+    if(x > 10)   throw "is too high";
+    if(x < 5)  throw "is too low";
+  }
+  catch(err) {
+    message.innerHTML = "Input " + err;
+  }
+  finally {
+    document.getElementById("demo").value = "";
+  }
+}
+
+16)JavaScript for...in Loop===============================*******
+The JavaScript for...in statement loops through the properties of an object.
+example
+var person = {fname:"John", lname:"Doe", age:25};
+for (x in person) {
+  txt += person[x];
+}
+o/p:John Doe 25
+
+17)nationalityis usedto  Adding New Properties==============================*******
+var person = {
+  firstname:"John",
+  lastname:"Doe",
+  age:50,
+  eyecolor:"blue"
+};
+person.nationality ="Eglish";
+o/p:Jo nationality: 'Eglish'.
+
+18)prototype===============================*******
+The JavaScript prototype property allows you to add new properties to object constructors:
+function Person(first, last, age, eyecolor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eyecolor;
+}
+Person.prototype.nationality = "English";
+
+19)The toString() method returns the function as a string:===============================*******
+
+20)call() method is used to call object===============================*******
+var person2 = {
+  firstName:"Mary",
+  lastName: "Doe"
+}
+person.fullName.call(person1);  // Will return "John Doe"
+
+21)appy==============================*******
+The call() method takes arguments separately.
+The apply() method takes arguments as an array.
+
+
+22)Callback function ===============
+A callback is a function passed as an argument to another function
+this time it can run  afetr another function finished
+Where callbacks really shine are in asynchronous functions, 
+where one function has to wait for another function (like waiting for a file to load).
+When you pass a function as an argument, remember not to use parenthesis.
+example
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+function myCalculator(num1, num2, myCallback) {
+  let sum = num1 + num2;
+  myCallback(sum);
+}
+myCalculator(5, 5, myDisplayer);
+
+23)asynchronous===============
+Functions running in parallel with other functions are called asynchronous
+the really example for asynchronous setTimeout() funtion
+When you pass a function as an argument, remember not to use parenthesis.
+example
+setTimeout(myFunction, 3000);  //here setTimeout is a function 
+function myFunction() {        //and myFunction is also a function where passed to setTimeout function
+  document.getElementById("demo").innerHTML = "I love You !!";
+}
+
+24)Promises===============
+it ius a javascript object , that links producing code and consuming code
+"Producing code" is code that can take some time
+"Consuming code" is code that must wait for the result
+mainly used for API
+it is taking two parameters resolve and reject
+and is having 3 states initial, success, reject
+if access the data it showing initial state
+if data is there using then() accsess data showing succss state
+if no data go ot catch() blcok showing rejected state
+example*******
+let promises = new Promise((x,y) => {
+    let stat=true;
+    if(stat){
+       x("success");
+    } else {
+        y("rejected");
+    }
+});
+promises.then(data => console.log(data))
+.catch(err => console.log(err))
+console.log(promises);
+
+25)async and await ===============
+async and await make promises easier to write
+async makes a function return a Promise
+async function myFunction() {
+  return "Hello";
+}
+await makes a function wait for a Promise
+let value = await promise;
+
+26)What is DOM===============
+DOM stands for Document Object MOdel
+a)when webpage loded in the broswer ,the browser create the DOM tree
+b)the HTML DOM is consracted as tree fo object 
+like Documnet type, head, title, body as a tree strcture 
+The HTML DOM is a standard for how to get, change, add, or delete HTML elements.
+
+with help of tree object javascript creates the dynmaic page
+JavaScript can change all the HTML elements in the page
+JavaScript can change all the HTML attributes in the page
+JavaScript can change all the CSS styles in the page
+JavaScript can remove existing HTML elements and attributes
+JavaScript can add new HTML elements and attributes
+
+
+27)DOM Propartie=================================
+The HTML DOM Document Object
+The document object represents your web page.
+If you want to access any element in an HTML page, you always start with accessing the document object.
+example**
+document.getElementById(id)	Find an element by element id
+document.getElementsByTagName(name)	Find elements by tag name
+document.getElementsByClassName(name)	Find elements by class name
+
+innerHTML*********
+a)The innerHTML property is useful for getting or replacing the content of HTML elements.
+
+28)JavaScript HTML DOM Events=========================
+a)onclick
+b)onmousedown and onmouseup
+Change an image when a user holds down the mouse button.
+
+c)onload
+Display an alert box when the page has finished loading.
+
+d)onfocus
+Change the background-color of an input field when it gets focus.
+
+e)The onmouseover and onmouseout events can be used to trigger a function when the user mouses over, 
+or out of, an HTML element:
+
+28)JavaScript HTML DOM method addEventListener=========================
+
+addEventListener is a method it can handle the multiple events
+a)click, *************
+document.getElementById("myBtn").addEventListener("click", myFunction);
+function myFunction() {
+  alert ("Hello World!");
+}
+b)submit, c)keyup, d)mouseover, d)mouseleave
+
+29)What is BOM============================
+The Browser Object Model  allows JavaScript to "talk to" the browser.
+like aletr() it will give alert msg on window with ok option 
+confirm() it will give confirm msg on window with ok and cancle  option
+propmt() it will give input type witch give the text by the user on window with ok and cancle option etc...
+The window object is supported by all browsers. It represents the browser's window.
+
+
+
+30)=====XML=========
+Fetch an XML document
+Use the XML DOM to loop through the document
+Extract values and store in variables
+Using JSON
+
+Fetch a JSON string
+JSON.Parse the JSON string
+
+
+31)What are Cookies?==============================*******
+a)Cookies are data, stored in small text files, on your computer.
+b)When a web server has sent a web page to a browser, the connection is shut down,
+and the server forgets everything about the user.
+c)Cookies were invented to solve the problem "how to remember information about the user":
+d)When a user visits a web page, his/her name can be stored in a cookie.
+e)Next time the user visits the page, the cookie "remembers" his/her name.
+f)Cookies are saved in name-value pairs like:
+
+29)JavaScript for...in Loop===============================*******
+

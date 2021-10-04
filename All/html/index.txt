@@ -1,0 +1,95 @@
+1.what is HTML?.================================
+a)HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. 
+b)HTML describes the structure of a Web page.
+c)HTML elements tell the browser how to display the content
+d)In HTML elements ,all are label pieces of content such as "this is a heading", "this is a paragraph", "this is a link".
+
+2.Basic HTML Stracture Description.================================
+a)The <!DOCTYPE html> declaration defines that this document is an HTML5 document
+b)The <html> element is the root element of an HTML page
+c)The <head> element contains meta information about the HTML page
+d)The <title> element specifies a title for the HTML page .
+f)The <body> element defines the document's body, and is a container for all the visible contents, 
+  such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+g)The <h1> element defines a large heading
+h)The <p> element defines a paragraph
+
+3.what is the purpose of Web Browsers.================================
+a)The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and  
+  display them correctly.
+b)A browser does not display the HTML tags, but uses them to determine how to display the document:
+
+4.what is Block-level Elements================================
+a)A block-level element always starts on a new line.
+b)A block-level element always takes up the full width available.
+c)A block level element has a top and a bottom margin, whereas an inline element does not.
+d)ex-section, article, div, main, footer, header ,table.
+
+5.what is Inline Elements===============================
+a)An inline element does not start on a new line.
+b)An inline element only takes up as much width as necessary.
+c)This is a <span> element inside a paragraph.
+d)etc-<small><span><strong><sub><sup>
+ 
+6.what is iframe===============================
+An HTML iframe is used to display a web page within a web page.
+
+7.what is What is Responsive Web Design?===============================
+a)Responsive web design is about creating web pages that look good on all devices!
+b)A responsive web design will automatically adjust for different screen sizes and viewports.
+C)look good on all devices (desktops, tablets, and phones):
+
+8)What are some of the key new features in HTML5?===============================
+a)Improved support for embedding rich content like graphics, audio, and video
+c)New semantic tags including <main>, <nav>, <article>, <section>, <header>, <footer>, and <aside>
+d)Extensions to the JavaScript API
+f)Additional form controls like <calendar>, <dates>, <time>, <email>, <url>, and <search>
+
+9)What is a Tag in HTML?===============================*******
+a)In an HTML page, tags ued are to place the content and format the pages. 
+b)They always defined between (<) and (>) symbols. For example, <h1>text</h1>.
+c)An opening tag must be preceded with a closing tag and indicated with a ‘/’ symbol.
+
+10) What is the key difference between HTML Elements and Tags?
+this is one of the most asked HTML interview questions.
+
+HTML Elements*****
+The sections of the web page, such as a paragraph, an image, or a link is an element, 
+and an element has a certain way of execution. For example, 
+the link is used to be clicked, and the text boxes can be used to input text.
+
+HTML Tags*******
+HTML elements communicate with the browser how to represent the text and become HTML tags 
+when enclosed within angular brackets <>.
+
+11)5. What are Attributes in HTML?===============================*******
+a)An additional attribute is given to each tag to alter the behavior of the tag.
+b)Attributes are defined directly after the tag name, inside the angular brackets. 
+c)They appear in opening tags and can never appear in closing tags.
+
+12)7. What are Lists in HTML?===============================*******
+HTML lists are used to group a set of related items in lists. It is defined with an <li> tag.
+Ordered List (HTML tag: <ol>)
+Unordered List (HTML tag: <ul>)
+Description List (HTML tag: <dl>)
+Menu List (HTML tag: <menu>)
+Directory List (HTML tag: <dir>)
+
+13)===============================*******
+Main: The main tag defines the primary section in the document related to the central content of a document with a <main> tag.
+Section: It is used to define specific sections in a document such as a chapter, header, footer, or any other section, and is specified with the <section> tag.
+Header: The header tag defines the title or heading of a document or its section. It is specified with the <header> tag.
+Footer: The footer tag defines the section of a document that contains information such as copyright or author’s information. It is designated with the <footer> tag.
+Article: The article tag represents an independent or self-contained part of the content of a document with the tag <article>.
+
+14). What is an Image Map?===============================*******
+An Image map lets you link different web pages with a single image. 
+It is represented with the <map> tag. 
+
+
+15)Forms attribute===============================*******
+type="text" ,id="fname", name="fname" ,value="John",
+required, max="8", min="4", width, height, placeHolder, disabled, 
+size, multlple, step="1 , autofouce="on",details, select,
+
+x

@@ -1,0 +1,4 @@
+1)what is MongoDB
+a)mongodb is a document oriented based , nosql database
+b)it is like JSON data
+c)key and value pair

@@ -1,0 +1,36 @@
+1)what is Bootstrap================================
+ Bootstrap is the  most popular  free open-source CSS framework for building responsive web sites.
+ Bootstrap includes HTML and CSS based on it create responsive page
+ Bootstrap is completely free to download and use!
+
+2)Advantages of Bootstrap:p================================
+Easy to use
+Responsive features
+In Bootstrap 3, mobile-first styles are part of the core framework
+
+3) Why use Bootstrap?===============================
+It has the support of all the web browsers like Internet Explorer, Google Chrome, 
+Firefox, Opera, Safari etc.
+It is a very powerful mobile first front-end framework, Mobile first styles are installed with bootstrap3 
+It is very easy to start as one needs to have an idea of HTML and CSS only to work with it,
+prior knowledge in HTML and CSS is fairly sufficient to start with Bootstrap.  
+
+4)Explain types of lists supported by Bootstrap?================================
+<dt> : definition term
+<dd> : corresponds to the defenition of <dt>
+Ordered lists − lies in a sequential order and prefixed by numerical values.
+Unordered lists −  styled traditionally, does not follow any specific order. 
+bullets can be easily customized.  
+class, list-inline can be used to hold all list items within a single line.
+
+5)Navigation bar in Bootstrap?================================
+the navigation bar can be created with Nav tag. Navbars and their contents are fluid by default.  
+A standard navigation bar is created with <nav class="navbar navbar-default">
+a navigation bar can extend or collapse, depending on the screen size.
+
+6)2) What are the key components of Bootstrap?================================
+a)CSS---constains the css all files
+b)scafolding---it contains the grid system and links
+c)layout components--includes the list of layouts
+d)javascript plugins----contains the  jquery, javascript plugins
+e)Customizeation--

@@ -1,0 +1,240 @@
+1)what is reactjs======================
+a)ReactJS is open source javascript front-end javascript library
+b)it used to build UserInterface application.
+c)it is based on component architechture.
+d)and main resone of react to develop singlepage applications
+
+2)creating react app======================
+The create-react-app is an officially supported way to create React applications.
+a)npm install -g create-react-app
+b)npx create-react-app myfirstreact
+c)cd myfirstreact
+d)npm start
+
+3)what is NPM======================
+NPM stands for Node Package Manager.used to install third party mouldes and packages 
+
+4)How does React Work? and whate is virtual-DOM======================
+React creates a VIRTUAL DOM in memory.
+a)Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory,
+ where it does all the necessary manipulating, before making the changes in the browser DOM.
+b)React only changes what needs to be changed!
+c)React finds out what changes have been made, and changes only what needs to be changed.
+d)The vartual DOM is like architechture of tree
+e)based on tree it will find fastest root to update
+f)vartual DOM very fseter thean original DOM
+
+5)How the react render  HTML elements======================
+a)the html web page render by using a function called ReactDOM.render().
+b)The ReactDOM.render() function takes two arguments, HTML code and an HTML element.
+c)The purpose of the function is to display the specified HTML code inside the specified HTML element.
+example:
+ReactDOM.render(<p>Hello</p>, document.getElementById('root')); 
+o/p--The result is displayed in <div id="root"> element:
+The HTML code in this tutorial uses JSX which allows you to write HTML tags inside the JavaScript code:
+
+6)what is what is ReactDOM======================
+it is a packages provides the specified DOM elements.using this we can render the html code
+
+7)what is JSX======================
+a)JSX stands for JavaScript XML, it is a template for reacat application
+b)it is allows to write HTML code inside react application
+c)it is maks easy to write html code in reacat
+d)JSX converts HTML tags into react elements
+e)You are not required to use JSX, but JSX makes it easier to write React applications.
+f)when we have mutly line of code in JSX we should write one parant element.otherwise it throw the error
+
+8)what is React component======================
+a)a component is block
+b)we can reuse the entair component
+c)component return the html code through the render() method
+d)we have two tyes of component in react 1)functional component 2) class component
+
+9)what is differece between functional & class component ======================
+    functional component                                          class component
+a)it is simple javascript function                        a)class component we can set the private state 
+  another name  call stateless functional                    another name called statful commponent
+b)it does't have state                                    b)class component have state
+c)it is used for ready & prasentaion purpuss              c)it is used for read & writing any logic purpuss
+d)it does have a render() method                          d)it is having render() method
+e)functional component only pass props as a  arguments    e)class component we can pass props and set state
+
+
+10)what is differece between props and state=======    
+               props                                                          state
+a)communication b/w parant to child component             a)it is a private object 
+b)props are arguments which is passed                     b)state we can access with the component
+  to the child component
+c)prpos are immutable                                     c)state are mutable
+d)Props are passed to components like HTML attributes.    d)state is like javascript object
+e)props are ready only                                    e) state can changes
+
+
+10)what is lifeCycle of component======================
+a)each componment in react having lifeCycle, which you can monitor and modifying crating application
+b)lifeCycle  only in class component 
+c) it is happening in three phases
+  1.Mounting 2.Updating, 3.Unmounting
+
+1.Mounting Phases**************
+when intanstance of a component insterted in to DOM
+like mounting is putting element onto the DOM, it is having 4 methods
+a)contractor()*******
+it is used for initializing state 
+and binding method
+constractor called with props as argumetns
+entair component constractor is executed first   
+
+b)getDerivedStateFromProps*******
+before redering componment it is render first
+it is having two parameters ,one is state, props
+
+c)render()******
+it is used to display the content of application
+render is keep updating when we have any chaeges in state
+
+d)commponentDidMount()********
+it is mainy used in API's
+it is render only one time
+it is rendered after componment is rendered
+
+2.Updating Phases**************
+a component is updated wherever any  changes in state and props component will updated
+it is having 5 methods
+a)getDerivedStateFromProps*************
+it is first method called when component is updated
+it is having two parameters ,one is state, props
+
+b)shouldComponentUpdate()***********
+this method will give boolean value whether component rendering or not
+
+c)rendere() **************
+it is re-render when component is updated
+
+d)getStanpShortBeforeUpdate()*********
+thois method os used access state and props before updating
+
+e)componentDidMount****************
+it rendere when component is updated
+
+3.Unmounting Phases**************
+when component is removed form the DOM , the react will call Unmounting
+it is having only one mehtod 
+a)componentUnmounting
+b)static getDerivedStateFromError()
+c)componentDidCatch()
+11)what is events======================
+Just like HTML, React can perform actions based on user events.\
+React has the same events as HTML: click, change, mouseover etc.
+
+12)what is setState======================
+a)it is used to changing state in class componentss
+b)the commponent state tell to the react this component state and chilren 
+ need to be rerendred with the updat state.
+c)then with help of setState() it will update the state
+
+13)what is what is Destracturing ======================
+a)it is way of accessing multiple proparties and stored in a object and arrys.
+b) in react Destracturing improves states and props code redability
+
+14)what is Binding======================
+a)Binding is happed with help of this keyword
+b)binding is done in the contractor
+b)through binding we can achieve the controlled inputs 
+c)with help of events we can control rthe state
+d)4 ways we ccan bind this.
+ 1)with help of arrow function
+ 2)and naming function 
+ 3)and binding contractor way through the 
+ 4)we can bind in the events.
+
+15)what is conditional rendering======================
+a)it same as javascript looping 
+b)it is done specially in terminary operater
+c)use of conditional rendering is render only some of them depending on the state of your application
+
+16)what is ListRendering rendering======================
+a)it is used when we have multilpl objects like studen details 
+b)with help of map method we can do list rendering
+example
+canst student=["MNC","revanth",20]
+let list=studen.map(detsils=> <h1>${detsils}</h1>)
+
+17)what is List and Keys rendering======================
+a)above code if you check in console we get one error like each value should be a unique id 
+b) so for that we can give see below
+example
+canst student=["MNC","revanth",20]
+let list=studen.map(detsils => <h1 key={id/name}> ${detsils}</h1>)
+c)now in the console wiil gone
+
+18)what is List and Index rendering======================
+a)it is uesd to give index to the each proparties like 0,1,2,3,4
+example
+canst student=["MNC","revanth",20]
+let list=studen.map((detsils,index) => <h1 key={index}> ${detsils}</h1>)
+0 MNC
+1 revanth
+2 23 like this
+
+19)How can give style in  css======================
+we can give style in 3 ways 
+a)with help of external file ,like importing the index.css
+b)with hepl of {{}} we can give 
+ex:  <h1 style={{backgroundColor: "lightblue"}}>Hello Style!</h1>
+c)we can give style through object way
+example
+var myDiv={
+      color: "white",
+      backgroundColor: "DodgerBlue",
+      padding: "10px",
+      fontFamily: "Arial"
+} 
+
+20)how to handling form ======================
+a)we can handling form with help of react events 
+b)events are same in Html events like onClick, onSubmit etc
+
+21)what Fragment======================
+a)it is used write multiple line of code 
+b)like grouping list childrens adding 
+C)so here fragment can dose not take memory for child 
+
+22)what is pure component=====================
+a)using pure component we can create component by extending PureComponent
+b)it implements the shouldComponentUpdate() to performing a comparision state and props
+c)it is having only class componment
+
+23)what is memo component=====================
+a)it is having in functional componment
+b)React. memo is a higher order component.
+
+24)what is refs in react=====================
+a) refs it is a function provided by the react
+b)using refs we can access the DOM elements 
+c)used to where u want change the value of component withoout ussing props
+
+
+24)what portols component=====================
+a)portols are used to write code in outside of the room element
+b)for that we should create React.cratesPortels()
+
+25)what is Heigherorder component=====================
+a)it is a advanced feature in react 
+b)sharing comman functionality to multiple components
+c)like one login reusing to multiple components
+d)a function takes  argument as function and return the new components
+e)if want pass remaing props we should use the spred operator[...this.props] whitout spred operator not work
+ex:var comPonen=hierOrderComponent(originalComponet)
+
+26)what is context component=====================
+a)it is provides the way to pass data to the componnets tree without having to pass props each component4
+b)to do that first crate the context , and provide the context and consume the context
+
+
+
+
+
+
+
+

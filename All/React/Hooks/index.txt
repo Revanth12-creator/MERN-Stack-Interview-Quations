@@ -1,0 +1,38 @@
+1)what is Hooks===========
+a) Hooks are new feature in react which is intriduced version 16.8 in 2018
+b)using hooks we can write stats inside the functionla component 
+c)hooks does not works inside class component
+d)we can use react other features without class component.
+
+2)why Hooks===========
+a)why hooks means to avide the this keyword confusion 
+b)because compare to class component ,functional component is easy to use.
+ so that to avide this keyword hooks are intrduces 
+c)it allos to  reuse the statefull logic using hooks 
+d)like stateful login we can not resue the .this time with help of hooks we can reuse the statfull logic
+
+3)what are ruls for Hooks, when it is uses ===========
+rule:1)call hooks only at the Top level functional
+       and don't call hooks in any inside function or any loop statement
+rule2)call hooks with in the functional component
+      dot't call  hooks in any javascript functions
+
+4)what is UseState===========
+a)a UseState is function , provideed by the react .
+b)it is realted to the functional component
+c)with help od useState we can write state in functional component
+d)react hook useState can take any type of value ,where class component state take only object
+e) useState return the 2 values one is current state of value and second one is setter value menas updtaed
+f)when we are using array or object inside the setState we should use the spread operator[... to copying ]
+
+5)what is useEffect===========
+a)the useEffect peform side effcts in functional component
+b)useEffect executed after evey render of the component
+c)it can handle capable of 3 lifeCycle method such as compomnentDidMount(), componentSholdupdate(), componentWillMount()
+
+
+6)what is Hooks===========
+7)what is Hooks===========
+8)what is Hooks===========
+9)what is Hooks===========
+10)what is Hooks==========
